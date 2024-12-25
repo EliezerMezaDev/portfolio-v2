@@ -1,0 +1,106 @@
+---
+import Section from "../../layouts/Section.astro";
+---
+
+<Section title="Experiencia laboral" styles="max-w-[1024px]">
+  <svg
+    slot="icon"
+    class="size-10 mt-1"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+    ></path>
+    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+    <path d="M12 12l0 .01"></path>
+    <path d="M3 13a20 20 0 0 0 18 0"></path>
+  </svg>
+
+  <ol class="relative mt-16">
+    <li>
+      <div
+        class="relative mx-12 pb-12 grid before:absolute before:left-[-33px] before:block before:h-full before:border-l-2 before:border-purple-600 before:content-[''] md:grid-cols-6 md:gap-10 md:space-x-4]"
+      >
+        <div class="relative pb-12 md:col-span-2">
+          <div class="sticky top-0">
+            <span
+              class="text-purple-600 -left-[42px] absolute rounded-full text-5xl"
+              >•</span
+            >
+            <h3 class="text-2xl font-bold text-purple-900">
+              Desarrollador web
+            </h3>
+            <h4 class="font-semibold text-xl text-lite-700">Novanet Studio</h4>
+            <time class="p-0 m-0 text-sm text-lite-700">Actualmente...</time>
+          </div>
+        </div>
+        <div
+          class="relative flex flex-col gap-2 pb-4 text-purple-800 font-medium md:col-span-4"
+        >
+          <ul>
+            <li class="list-disc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </li>
+            <li class="list-disc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo ea quas numquam, quod sed delectus.
+            </li>
+            <li class="list-disc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore, fuga?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        class="relative mx-12 pb-12 grid before:absolute before:left-[-33px] before:block before:h-full before:border-l-2 before:border-purple-600 before:content-[''] md:grid-cols-6 md:gap-10 md:space-x-4]"
+      >
+        <div class="relative pb-12 md:col-span-2">
+          <div class="sticky top-0">
+            <span
+              class="text-purple-600 -left-[42px] absolute rounded-full text-5xl"
+              >•</span
+            >
+            <h3 class="text-2xl font-bold text-purple-900">
+              Analista de desarrollo
+            </h3>
+            <h4 class="font-semibold text-xl text-lite-700">
+              Spartan Techs C.A.
+            </h4>
+            <time class="p-0 m-0 text-sm text-lite-700"
+              >Oct 2021 - Ene 2024</time
+            >
+          </div>
+        </div>
+        <div
+          class="relative flex flex-col gap-2 pb-4 text-purple-800 font-medium md:col-span-4"
+        >
+          <ul>
+            <li class="list-disc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore, fuga?
+            </li>
+
+            <li class="list-disc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo ea quas numquam, quod sed delectus.
+            </li>
+            <li class="list-disc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ol>
+</Section>
