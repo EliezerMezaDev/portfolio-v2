@@ -50,7 +50,7 @@ import { getProjectSourceByID } from "../../assets/data.ts";
                 {p.code && (
                   <a
                     target="_blank"
-                    href="#"
+                    href={p.code}
                     role="link"
                     class="inline-flex bg-lite-200 text-purple-900 
                     border border-lite-500 rounded-xl items-center justify-center gap-1 px-3 py-1 space-x-2 text-base transition hover:bg-lite-300"
@@ -62,7 +62,7 @@ import { getProjectSourceByID } from "../../assets/data.ts";
                 {p.preview && (
                   <a
                     target="_blank"
-                    href="#"
+                    href={p.preview}
                     role="link"
                     class="inline-flex bg-purple-400 text-purple-100 
                     border border-purple-700 rounded-xl items-center justify-center gap-1 px-3 py-1 space-x-2 text-base transition hover:bg-purple-500"

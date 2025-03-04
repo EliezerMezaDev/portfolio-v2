@@ -1,38 +1,13 @@
 const projects: EMZ.Project[] = [
   {
     id: 0,
-    portraid: "images/projects/project0.webp",
-    title: "Projecto de prueba 1",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat labore odit iure officiis id quas.",
-    stack: ["react", "astro"],
+    portraid: "images/projects/theCocktailMenu.webp",
+    title: "The Cocktail menu",
+    desc: "Prueba de uso de comunicacion API REST, SASS y un efecto de texto que vi en Pinterest.",
+    stack: ["react", "sass"],
     images: [],
-
-    preview: "https://asd.com",
-    code: "https://asd.com",
-  },
-
-  {
-    id: 1,
-    portraid: "images/projects/project0.webp",
-    title: "Projecto de prueba 2",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat labore odit iure officiis id quas.",
-    stack: ["next", "sass"],
-    images: [],
-
-    preview: "https://asd.com",
-    code: "",
-  },
-
-  {
-    id: 2,
-    portraid: "images/projects/project0.webp",
-    title: "Projecto de prueba 3",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat labore odit iure officiis id quas.",
-    stack: ["css", "tailwind", 'tauri', "bun"],
-    images: [],
-
-    preview: "https://asd.com",
-    code: "",
+    preview: "",
+    code: "https://github.com/EliezerMezaDev/TheCocktailMenu",
   },
 ];
 
