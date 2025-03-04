@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import Section from "../../layouts/Section.astro";
 
 import { getProjectSourceByID } from "../../assets/data.ts";
@@ -7,23 +9,7 @@ import { getProjectSourceByID } from "../../assets/data.ts";
 <script></script>
 
 <Section title="Proyectos" styles="max-w-[1024px]">
-  <svg
-    slot="icon"
-    class="size-10 mt-1"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-terminal-2"
-    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-      d="M8 9l3 3l-3 3"></path><path d="M13 15l3 0"></path><path
-      d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-    ></path></svg
-  >
+  <Icon name="code" slot="icon" class="size-10 mt-1" />
 
   <div class="flex flex-col gap-y-16">
     {
@@ -33,7 +19,7 @@ import { getProjectSourceByID } from "../../assets/data.ts";
             <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
               <img
                 alt={`Project_${p.id}`}
-                class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                class="w-full h-56 duration-500 sm:h-full md:scale-110"
                 loading="lazy"
                 src={p.portraid}
               />
@@ -64,52 +50,24 @@ import { getProjectSourceByID } from "../../assets/data.ts";
                 {p.code && (
                   <a
                     target="_blank"
-                    href="https://github.com/pheralb/svgl"
+                    href={p.code}
                     role="link"
                     class="inline-flex bg-lite-200 text-purple-900 
                     border border-lite-500 rounded-xl items-center justify-center gap-1 px-3 py-1 space-x-2 text-base transition hover:bg-lite-300"
                   >
-                    <svg
-                      class="size-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
+                    <Icon name="github" class="size-5" />
                     Code
                   </a>
                 )}
                 {p.preview && (
                   <a
                     target="_blank"
-                    href="https://github.com/pheralb/svgl"
+                    href={p.preview}
                     role="link"
                     class="inline-flex bg-purple-400 text-purple-100 
                     border border-purple-700 rounded-xl items-center justify-center gap-1 px-3 py-1 space-x-2 text-base transition hover:bg-purple-500"
                   >
-                    <svg
-                      class="size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
+                    <Icon name="link" class="size-4" />
                     Preview
                   </a>
                 )}
